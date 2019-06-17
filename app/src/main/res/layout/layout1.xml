@@ -8,50 +8,27 @@
         tools:context=".MainActivity">
 
     <TextView
-            android:text="Perpanjangan SIM
-Dokumen yang harus disiapkan adalah :
-1. Membawa KTP Asli
-2. Membawa SIM Asli yang masih aktif / berlaku
-3. Membawa Surat Keterangan Kesehatan dari Kedokteran atau KIR Dokter
-4. Fotocopy KTP, 2 lembar cukup namun lebih untuk berjaga-jaga
-
-Prosedur perpanjangan SIM :
-Persyaratan administrasi pengajuan perpanjangan SIM meliputi :
-1. Mengisi formulir pengajuan perpanjangan SIM
-2. Kartu Tanda Penduduk asli setempat yang masih berlaku bagi Warga Negara Indonesia atau dokumen keimigrasian bagi Warga Negara Asing
-3. SIM lama
-4. Surat keterangan lulus uji keterampilan Simulator
-5. Surat keterangan kesehatan mata
-
-Perpanjangan SIM dilakukan sebelum masa berlakunya berakhir.
-Perpanjangan yang dilakukan setelah lewat waktu, sebagimana dimaksud harus diajukan SIM baru.
-Perpanjangan SIM dapat dilaksanakan di Satpas atau tempat pelayanan SIM lain di seluruh Indonesia.
-
-Pengajuan perpanjangan SIM beserta dokumen persyaratan diajukan ke :
-1. Petugas kelompok kerja identifikasi dan verifikasi bagi perpanjangan SIM yang dilakukan di Satpas
-2. Petugas pada tempat pelayanan SIM lain
-
-Biaya untuk perpanjangan SIM :
-1. Biaya perpanjangan untuk SIM A adalah sebesar Rp 80.000
-2. Biaya perpanjangan untuk SIM Internasional adalah sebesar Rp 225.000
-3. Biaya perpanjangan untuk SIM B1 adalah sebesar Rp 80.000
-4. Biaya perpanjangan untuk SIM B2 adalah sebesar Rp 80.000
-5. Biaya perpanjangan untuk SIM D adalah sebesar Rp 30.000
-6. Biaya perpanjangan untuk SIM D1 adalah sebesar Rp 30.000
-7. Biaya perpanjangan untuk SIM C adalah sebesar Rp 75.000
-8. Biaya perpanjangan untuk SIM C1 adalah sebesar Rp 75.000
-9. Biaya perpanjangan untuk SIM C2 adalah sebesar Rp 75.000"
-            android:layout_width="354dp"
-            android:layout_height="582dp"
-            android:id="@+id/textView" android:layout_marginTop="120dp"
+            android:text="@string/panduan1"
+            android:layout_width="351dp"
+            android:layout_height="445dp"
+            android:id="@+id/textView" android:layout_marginTop="140dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="28dp" android:layout_marginStart="28dp"/>
+            android:layout_marginLeft="24dp" android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="24dp" android:layout_marginRight="24dp" android:textSize="13sp"/>
     <Button
-            android:text="Kembali ke menu utama"
+            android:text="@string/kembali"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonBM" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp" android:layout_marginTop="16dp"
             app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+            android:text="@string/selanjutnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSL"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"/>
 
 </android.support.constraint.ConstraintLayout>
