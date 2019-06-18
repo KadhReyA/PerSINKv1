@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">PerSINK</string>
-    <string name="panduan1">Perpanjangan SIM Dokumen yang harus disiapkan adalah : \n1. Membawa KTP Asli\n2. Membawa SIM Asli yang masih aktif / berlaku\n3. Membawa Surat Keterangan Kesehatan dari Kedokteran atau KIR Dokter\n4. Fotocopy KTP, 2 lembar cukup namun lebih untuk berjaga-jaga\n\nProsedur perpanjangan SIM :\nPersyaratan administrasi pengajuan perpanjangan SIM meliputi : \n1. Mengisi formulir pengajuan perpanjangan SIM \n2. Kartu Tanda Penduduk asli setempat yang masih berlaku bagi Warga Negara Indonesia atau dokumen keimigrasian bagi Warga Negara Asing \n3. SIM lama \n4. Surat keterangan lulus uji keterampilan Simulator\n5. Surat keterangan kesehatan mata\n\nPerpanjangan SIM dilakukan sebelum masa berlakunya berakhir.\nPerpanjangan yang dilakukan setelah lewat waktu, sebagimana dimaksud harus diajukan SIM baru.
-        \nPerpanjangan SIM dapat dilaksanakan di Satpas atau tempat pelayanan SIM lain di seluruh Indonesia.</string>
-    <string name="panduan2">Pengajuan perpanjangan SIM beserta dokumen persyaratan diajukan ke :\n1. Petugas kelompok kerja identifikasi dan verifikasi bagi perpanjangan SIM yang dilakukan di Satpas\n2. Petugas pada tempat pelayanan SIM lain
+    <string name="panduan1">Perpanjangan SIM Dokumen yang harus disiapkan adalah : \n
+        1. Membawa KTP Asli\n
+        2. Membawa SIM Asli yang masih aktif / berlaku\n
+        3. Membawa Surat Keterangan Kesehatan dari Kedokteran atau KIR Dokter\n
+        4. Fotocopy KTP, 2 lembar cukup namun lebih untuk berjaga-jaga\n\n
+        Prosedur perpanjangan SIM :\nPersyaratan
+        administrasi pengajuan perpanjangan SIM meliputi : \n1. Mengisi formulir pengajuan perpanjangan SIM \n2. Kartu
+        Tanda Penduduk asli setempat yang masih berlaku bagi Warga Negara Indonesia atau dokumen keimigrasian bagi Warga
+        Negara Asing \n3. SIM lama \n4. Surat keterangan lulus uji keterampilan Simulator\n5. Surat keterangan kesehatan
+        mata\n\nPerpanjangan SIM dilakukan sebelum masa berlakunya berakhir.\nPerpanjangan yang dilakukan setelah lewat
+        waktu, sebagimana dimaksud harus diajukan SIM baru.
+        \nPerpanjangan SIM dapat dilaksanakan di Satpas atau tempat pelayanan SIM lain di seluruh Indonesia.
+    </string>
+    <string name="panduan2">Pengajuan perpanjangan SIM beserta dokumen persyaratan diajukan ke :\n1. Petugas kelompok
+        kerja identifikasi dan verifikasi bagi perpanjangan SIM yang dilakukan di Satpas\n2. Petugas pada tempat
+        pelayanan SIM lain
         \nBiaya untuk perpanjangan SIM :\n1. Biaya perpanjangan untuk SIM A adalah sebesar Rp 80.000
         \n2. Biaya perpanjangan untuk SIM Internasional adalah sebesar Rp 225.000
         \n3. Biaya perpanjangan untuk SIM B1 adalah sebesar Rp 80.000
@@ -11,8 +24,9 @@
         \n6. Biaya perpanjangan untuk SIM D1 adalah sebesar Rp 30.000
         \n7. Biaya perpanjangan untuk SIM C adalah sebesar Rp 75.000
         \n8. Biaya perpanjangan untuk SIM C1 adalah sebesar Rp 75.000
-        \n9. Biaya perpanjangan untuk SIM C2 adalah sebesar Rp 75.000</string>
+        \n9. Biaya perpanjangan untuk SIM C2 adalah sebesar Rp 75.000
+    </string>
     <string name="kembali">Kembali ke menu utama</string>
     <string name="selanjutnya">Selanjutnya</string>
-
+    <string name="slide1"> </string>
 </resources>

@@ -11,16 +11,13 @@ import android.widget.Button;
 import android.widget.TextView
 
 
-
-
-
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        /*
         // Finds you button from the xml layout file
         val createNotificationButton = findViewById<Button>(R.id.bigButton)
         val createNotification20Button = findViewById<Button>(R.id.button20)
@@ -153,6 +150,6 @@ class MainActivity : AppCompatActivity() {
                 "1. Biaya Andmin STNK untuk pembuatan baru dan perpanjang STNK sebesar Rp 200.000\n" +
                 "2. Biaya Penerbitan TNKB atau Plat Nomor kendaraan sebesar Rp 100.000\n" +
                 "3. Biaya Penerbitan BPKB sebesar Rp 375.000\n" +
-                "4. Biaya penerbitan surat mutasi ke luar daerah Rp 250.000"
+                "4. Biaya penerbitan surat mutasi ke luar daerah Rp 250.000"*/
     }
 }
