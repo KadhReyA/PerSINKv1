@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
         createNotification10Button.setOnClickListener {
             // Starts the function below
-            addNotificationTimed("10")
+            addNotificationTimed("100")
         }
         createSTNKButton.setOnClickListener {
             // Starts the function below
