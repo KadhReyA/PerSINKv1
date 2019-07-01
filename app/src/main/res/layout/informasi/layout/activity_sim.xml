@@ -12,7 +12,7 @@
             android:id="@+id/textView2" android:textSize="30sp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="176dp"
-            android:layout_marginStart="176dp" android:text="@string/judulinputSIM"/>
+            android:layout_marginStart="176dp" android:text="@string/judulinputSIM" android:textStyle="bold"/>
     <TextView
             android:text="No. SIM"
             android:layout_width="wrap_content"
@@ -24,7 +24,6 @@
             android:layout_width="238dp"
             android:layout_height="39dp"
             android:inputType="textPersonName"
-            android:text="Name"
             android:ems="10"
             android:id="@+id/editText5"
             android:textSize="12sp" android:layout_marginTop="37dp"
@@ -66,8 +65,8 @@
             android:inputType="textPostalAddress"
             android:ems="10"
             android:id="@+id/editText2" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="28dp" android:layout_marginRight="28dp" android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/editText"/>
+            android:layout_marginEnd="28dp" android:layout_marginRight="28dp" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/editText" android:textSize="12sp"/>
     <EditText
             android:layout_width="238dp"
             android:layout_height="39dp"
@@ -124,7 +123,7 @@
             android:ems="10"
             android:id="@+id/editText6" android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="26dp" android:layout_marginRight="26dp"/>
+            android:layout_marginEnd="26dp" android:layout_marginRight="26dp" android:textSize="12sp"/>
     <TextView
             android:text="Berlaku s/d"
             android:layout_width="wrap_content"
