@@ -15,15 +15,16 @@ class sim : AppCompatActivity() {
         setContentView(R.layout.activity_sim)
         btnSimpanSIM.setOnClickListener {
             val dbHandler = DatabaseHelperSIM(this, null)
-            ContentValues ctv = new ContentValues()
-            val ConsSim.SIM = ConsSim(editSIM.text.toString())
-            val Nama = ConsSim(editNama.text.toString())
-            val Alamat = ConsSim(editAlamat.text.toString())
-            val Tempat = ConsSim(editTempat.text.toString())
-            val Tanggal = ConsSim(editTTL.text.toString())
-            val jeniskelamin = ConsSim(editSIM.text.toString())
-            val waktu = ConsSim(editDate.text.toString())
-            dbHandler.addName(SIM, Nama, Alamat, Tempat, Tanggal, jeniskelamin, waktu)
+
+            val SIM = editSIM.text.toString()
+            val Nama = editNama.text.toString()
+            val Alamat = editAlamat.text.toString()
+            val Tempat = editTempat.text.toString()
+            val Tanggal = editTTL.text.toString()
+            val jeniskelamin = editSIM.text.toString()
+            val waktu = editDate.text.toString()
+            val tampung = ConsSim(SIM,Nama,Alamat,Tempat,Tanggal,jeniskelamin,waktu)
+            dbHandler.addName(tampung)
             //showData()
         }
     }

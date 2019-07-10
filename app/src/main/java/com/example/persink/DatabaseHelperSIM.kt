@@ -31,12 +31,12 @@ class DatabaseHelperSIM(context: Context, factory: SQLiteDatabase.CursorFactory?
     fun addName(cons : ConsSim) {
         val values = ContentValues()
         values.put(COL_1, cons.NoSIM)
-        values.put(COL_2, cons.NoSIM)
-        values.put(COL_3, cons.NoSIM)
-        values.put(COL_4, cons.NoSIM)
-        values.put(COL_5, cons.NoSIM)
-        values.put(COL_6, cons.NoSIM)
-        values.put(COLUMN_NAME_EXP, cons.dateExp)
+        values.put(COL_2, cons.Nama)
+        values.put(COL_3, cons.Alamat)
+        values.put(COL_4, cons.Tempat)
+        values.put(COL_5, cons.TanggalLahir)
+        values.put(COL_6, cons.JenisKelamin)
+        values.put(COLUMN_NAME_EXP, cons.TanggalExp)
         val db = this.writableDatabase
         db.insert(TABLE_NAME, null, values)
         db.close()

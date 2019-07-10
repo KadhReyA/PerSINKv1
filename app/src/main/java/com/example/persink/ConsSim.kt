@@ -18,4 +18,6 @@ class ConsSim {
         this.JenisKelamin = JenisKelamin
         this.TanggalExp = TanggalLahir
     }
+
+
 }
