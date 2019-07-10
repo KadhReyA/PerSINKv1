@@ -22,11 +22,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val masukkansim = findViewById <ImageButton> (R.id.imageButton)
         masukkansim.setOnClickListener {
-             startActivity(Intent(this, sim::class.java))
+             startActivity(Intent(this@MainActivity, sim::class.java))
         }
         val masukkanstnk = findViewById <ImageButton> (R.id.imageButton2)
         masukkanstnk.setOnClickListener {
-            startActivity(Intent(this, stnk::class.java))
+            startActivity(Intent(this@MainActivity, stnk::class.java))
         }
     }
 
