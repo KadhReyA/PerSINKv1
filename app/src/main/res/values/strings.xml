@@ -31,4 +31,6 @@
     <string name="slide1"> </string>
     <string name="judulinputSIM">SIM </string>
     <string name="judulinputSTNK">STNK </string>
+    <string name="title_activity_stnk">PerSINK Notification</string>
+    <string name="notification_channel_description">PerSINK Notification</string>
 </resources>
