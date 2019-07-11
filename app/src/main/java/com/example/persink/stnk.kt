@@ -2,6 +2,7 @@ package com.example.persink
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_stnk.*
 
 class stnk : AppCompatActivity() {
@@ -22,7 +23,7 @@ class stnk : AppCompatActivity() {
             val berlaku = editBerlaku.text.toString()
             val tampung = ConsSTNK(nostnk,platnomor,almt,merk,jenis,tahun,berlaku)
             dbHandler.addSTNK(tampung)
-
+            Toast.makeText(this,"Masuk Database", Toast.LENGTH_LONG).show()
         }
         btnHapusSTNK.setOnClickListener {
             editSTNK.setText("")

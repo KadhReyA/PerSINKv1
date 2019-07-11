@@ -51,7 +51,7 @@ class DatabaseHelperSTNK(context: Context, factory: SQLiteDatabase.CursorFactory
         private val DATABASE_NAME = "PerSINK.db"
         val TABLE_NAME = "NoSTNK"
         val COLUMN_ID = "id"
-        val COL_1 = "NoSTNK"
+        val COL_1 = "NoStnk"
         val COL_2 = "PlatNomor"
         val COL_3 = "Almt"
         val COL_4 = "Merk"
