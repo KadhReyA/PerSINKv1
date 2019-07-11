@@ -27,16 +27,8 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText7" android:layout_marginTop="26dp"
+            android:id="@+id/editSTNK" android:layout_marginTop="26dp"
             app:layout_constraintTop_toBottomOf="@+id/textView9" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText9" android:layout_marginTop="23dp"
-            app:layout_constraintTop_toBottomOf="@+id/editText7" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
     <TextView
             android:text="Plat Nomor"
@@ -45,6 +37,14 @@
             android:id="@+id/textView14" android:layout_marginTop="45dp"
             app:layout_constraintTop_toBottomOf="@+id/textView12" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="34dp" android:layout_marginStart="34dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editPlat" android:layout_marginTop="23dp"
+            app:layout_constraintTop_toBottomOf="@+id/editSTNK" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
     <TextView
             android:text="Alamat"
             android:layout_width="wrap_content"
@@ -57,16 +57,8 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText10" android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/editText9" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText11" android:layout_marginTop="25dp"
-            app:layout_constraintTop_toBottomOf="@+id/editText10" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/editAlmt" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/editPlat" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
     <TextView
             android:text="Merk"
@@ -75,6 +67,14 @@
             android:id="@+id/textView16" android:layout_marginTop="54dp"
             app:layout_constraintTop_toBottomOf="@+id/textView15" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="34dp" android:layout_marginStart="34dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editMerk" android:layout_marginTop="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/editAlmt" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
     <TextView
             android:text="Jenis"
             android:layout_width="wrap_content"
@@ -87,51 +87,52 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText12" android:layout_marginTop="26dp"
-            app:layout_constraintTop_toBottomOf="@+id/editText11" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/editJenis" android:layout_marginTop="26dp"
+            app:layout_constraintTop_toBottomOf="@+id/editMerk" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
     <TextView
             android:text="Tahun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView18" android:layout_marginTop="55dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView17" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="34dp" android:layout_marginStart="34dp"/>
+            android:id="@+id/textView18"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp" android:layout_marginTop="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText13" android:layout_marginTop="29dp"
-            app:layout_constraintTop_toBottomOf="@+id/editText12" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/editTahun" android:layout_marginTop="29dp"
+            app:layout_constraintTop_toBottomOf="@+id/editJenis" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
     <TextView
             android:text="Berlaku s/d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView19" android:layout_marginTop="50dp"
+            android:id="@+id/textView19" android:layout_marginTop="52dp"
             app:layout_constraintTop_toBottomOf="@+id/textView18" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="34dp" android:layout_marginStart="34dp"/>
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText14" android:layout_marginTop="27dp"
-            app:layout_constraintTop_toBottomOf="@+id/editText13" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/editBerlaku" android:layout_marginTop="27dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTahun" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
     <Button
             android:text="Simpan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button3" android:layout_marginTop="61dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView19" app:layout_constraintEnd_toStartOf="@+id/button4"
-            android:layout_marginEnd="76dp" android:layout_marginRight="76dp"/>
+            android:id="@+id/btnSimpanSTNK" android:layout_marginTop="72dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" app:layout_constraintEnd_toStartOf="@+id/btnHapusSTNK"
+            android:layout_marginEnd="100dp" android:layout_marginRight="100dp"/>
     <Button
             android:text="Hapus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button4" android:layout_marginEnd="78dp" android:layout_marginRight="78dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="48dp"
-            app:layout_constraintTop_toBottomOf="@+id/editText14"/>
+            android:id="@+id/btnHapusSTNK" android:layout_marginEnd="68dp" android:layout_marginRight="68dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="52dp"
+            app:layout_constraintTop_toBottomOf="@+id/editBerlaku"/>
 </android.support.constraint.ConstraintLayout>

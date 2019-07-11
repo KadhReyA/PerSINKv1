@@ -10,9 +10,15 @@ import java.util.jar.Attributes
 
 class sim : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sim)
+        var text =""
+        radioGroup.setOnCheckedChangeListener { _ , isChecked ->
+
+            text += if (R.id.radioGroup==isChecked)"Laki-Laki" else "Perempuan"
+        }
         btnSimpanSIM.setOnClickListener {
             val dbHandler = DatabaseHelperSIM(this, null)
 
@@ -21,11 +27,20 @@ class sim : AppCompatActivity() {
             val Alamat = editAlamat.text.toString()
             val Tempat = editTempat.text.toString()
             val Tanggal = editTTL.text.toString()
-            val jeniskelamin = editSIM.text.toString()
+            val jeniskelamin = text
             val waktu = editDate.text.toString()
             val tampung = ConsSim(SIM,Nama,Alamat,Tempat,Tanggal,jeniskelamin,waktu)
             dbHandler.addName(tampung)
-            //showData()
+            Toast.makeText(this,"Masuk Database",Toast.LENGTH_LONG).show()
+        }
+        btnHapusSIM.setOnClickListener {
+            editSIM.setText("")
+            editNama.setText("")
+            editAlamat.setText("")
+            editTempat.setText("")
+            editTTL.setText("")
+            radioButton
+            editDate.setText("")
         }
     }
 }

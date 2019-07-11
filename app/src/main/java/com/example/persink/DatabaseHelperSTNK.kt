@@ -6,9 +6,8 @@ import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import java.util.*
-import java.util.jar.Attributes
 
-class DatabaseHelperSIM(context: Context, factory: SQLiteDatabase.CursorFactory?) :
+class DatabaseHelperSTNK(context: Context, factory: SQLiteDatabase.CursorFactory?) :
     SQLiteOpenHelper(context, DATABASE_NAME, factory, DATABASE_VERSION) {
     override fun onCreate(db: SQLiteDatabase) {
         val CREATE_PRODUCTS_TABLE = ("CREATE TABLE " +
@@ -28,17 +27,18 @@ class DatabaseHelperSIM(context: Context, factory: SQLiteDatabase.CursorFactory?
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME)
         onCreate(db)
     }
-    fun addName(cons : ConsSim) {
+    fun addSTNK(cons : ConsSTNK) {
         val values = ContentValues()
-        values.put(COL_1, cons.NoSIM)
-        values.put(COL_2, cons.Nama)
-        values.put(COL_3, cons.Alamat)
-        values.put(COL_4, cons.Tempat)
-        values.put(COL_5, cons.TanggalLahir)
-        values.put(COL_6, cons.JenisKelamin)
-        values.put(COLUMN_NAME_EXP, cons.TanggalExp)
+        values.put(COL_1, cons.NoSTNK)
+        values.put(COL_2, cons.PlatNomor)
+        values.put(COL_3, cons.Almt)
+        values.put(COL_4, cons.Merk)
+        values.put(COL_5, cons.Jenis)
+        values.put(COL_6, cons.Tahun)
+        values.put(COLUMN_NAME_EXP, cons.Berlaku)
         val db = this.writableDatabase
         db.insert(TABLE_NAME, null, values)
+
         db.close()
     }
     fun getAll(): Cursor? {
@@ -49,14 +49,14 @@ class DatabaseHelperSIM(context: Context, factory: SQLiteDatabase.CursorFactory?
     companion object {
         private val DATABASE_VERSION = 1
         private val DATABASE_NAME = "PerSINK.db"
-        val TABLE_NAME = "NoSIM"
+        val TABLE_NAME = "NoSTNK"
         val COLUMN_ID = "id"
-        val COL_1 = "NoSim"
-        val COL_2 = "Nama"
-        val COL_3 = "Alamat"
-        val COL_4 = "Tempat"
-        val COL_5 = "TanggalLahir"
-        val COL_6 = "JenisKelamin"
-        val COLUMN_NAME_EXP = "TanggalExp"
+        val COL_1 = "NoSTNK"
+        val COL_2 = "PlatNomor"
+        val COL_3 = "Almt"
+        val COL_4 = "Merk"
+        val COL_5 = "Jenis"
+        val COL_6 = "Tahun"
+        val COLUMN_NAME_EXP = "Berlaku"
     }
 }

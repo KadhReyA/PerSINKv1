@@ -16,7 +16,7 @@ class ConsSim {
         this.Tempat =Tempat
         this.TanggalLahir =TanggalLahir
         this.JenisKelamin = JenisKelamin
-        this.TanggalExp = TanggalLahir
+        this.TanggalExp = TanggalExp
     }
 
 

@@ -2,17 +2,9 @@ package com.example.persink
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.content.Context;
-import android.content.Intent;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.ContextCompat.startActivity
-import android.view.View
-import android.widget.Button;
+import android.content.Intent
 import android.widget.ImageButton
-import android.widget.TextView
-import android.widget.Toast
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,13 +12,22 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val masukkansim = findViewById <ImageButton> (R.id.imageButton)
         masukkansim.setOnClickListener {
-             startActivity(Intent(this@MainActivity, sim::class.java))
+            startActivity(Intent(this@MainActivity, sim::class.java))
         }
         val masukkanstnk = findViewById <ImageButton> (R.id.imageButton2)
         masukkanstnk.setOnClickListener {
             startActivity(Intent(this@MainActivity, stnk::class.java))
+        }
+        val lihatsim = findViewById<ImageButton>(R.id.imageButton3)
+        lihatsim.setOnClickListener {
+
+        }
+        val lihatstnk = findViewById<ImageButton>(R.id.imageButton4)
+        lihatstnk.setOnClickListener {
+
         }
     }
 
