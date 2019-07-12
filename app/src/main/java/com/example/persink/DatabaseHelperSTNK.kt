@@ -5,7 +5,7 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import java.util.*
+
 
 class DatabaseHelperSTNK(context: Context, factory: SQLiteDatabase.CursorFactory?) :
     SQLiteOpenHelper(context, DATABASE_NAME, factory, DATABASE_VERSION) {
@@ -38,7 +38,6 @@ class DatabaseHelperSTNK(context: Context, factory: SQLiteDatabase.CursorFactory
         values.put(COLUMN_NAME_EXP, cons.Berlaku)
         val db = this.writableDatabase
         db.insert(TABLE_NAME, null, values)
-
         db.close()
     }
     fun getAll(): Cursor? {
@@ -48,8 +47,8 @@ class DatabaseHelperSTNK(context: Context, factory: SQLiteDatabase.CursorFactory
 
     companion object {
         private val DATABASE_VERSION = 1
-        private val DATABASE_NAME = "PerSINK.db"
-        val TABLE_NAME = "NoSTNK"
+        private val DATABASE_NAME = "Database.db"
+        val TABLE_NAME = "STNK"
         val COLUMN_ID = "id"
         val COL_1 = "NoStnk"
         val COL_2 = "PlatNomor"

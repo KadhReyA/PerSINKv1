@@ -25,11 +25,15 @@ class MainActivity : AppCompatActivity() {
         }
         val lihatsim = findViewById<ImageButton>(R.id.imageButton3)
         lihatsim.setOnClickListener {
-
+            startActivity(Intent( this@MainActivity, com.example.persink.lihatsim::class.java ))
         }
         val lihatstnk = findViewById<ImageButton>(R.id.imageButton4)
         lihatstnk.setOnClickListener {
-
+            startActivity(Intent( this@MainActivity, com.example.persink.lihatstnk::class.java ))
+        }
+        val panduan = findViewById<ImageButton>(R.id.imageButton5)
+        panduan.setOnClickListener {
+            startActivity(Intent ( this@MainActivity, com.example.persink.panduan::class.java))
         }
 
         notifyButton.setOnClickListener { view ->
