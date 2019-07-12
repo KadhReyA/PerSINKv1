@@ -19,31 +19,28 @@ class MainActivity : AppCompatActivity() {
         masukkansim.setOnClickListener {
             startActivity(Intent(this@MainActivity, sim::class.java))
         }
+
         val masukkanstnk = findViewById <ImageButton> (R.id.imageButton2)
         masukkanstnk.setOnClickListener {
             startActivity(Intent(this@MainActivity, stnk::class.java))
         }
+
         val lihatsim = findViewById<ImageButton>(R.id.imageButton3)
         lihatsim.setOnClickListener {
             startActivity(Intent( this@MainActivity, com.example.persink.lihatsim::class.java ))
         }
+
         val lihatstnk = findViewById<ImageButton>(R.id.imageButton4)
         lihatstnk.setOnClickListener {
             startActivity(Intent( this@MainActivity, com.example.persink.lihatstnk::class.java ))
         }
+
         val panduan = findViewById<ImageButton>(R.id.imageButton5)
         panduan.setOnClickListener {
+            val mNotificationTime = Calendar.getInstance().timeInMillis + 5000 //Set after 5 seconds from the current time.
+            NotificationUtils().setNotification(mNotificationTime, this@MainActivity)
             startActivity(Intent ( this@MainActivity, com.example.persink.panduan::class.java))
         }
 
-        notifyButton.setOnClickListener { view ->
-            val mNotificationTime = Calendar.getInstance().timeInMillis + 5000 //Set after 5 seconds from the current time.
-            NotificationUtils().setNotification(mNotificationTime, this@MainActivity)
-            Snackbar.make(view, "Notifikasi 5 detik lagi", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-
-        }
     }
-
-
 }
