@@ -9,6 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".pengaturan_notifikasi">
+        </activity>
         <activity
                 android:name=".stnk"
                 android:label="@string/title_activity_stnk"
@@ -49,8 +51,9 @@
                 android:name=".lihatstnk"
                 android:label="lihatstnk"
                 android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".panduan"
-        android:label="Panduan">
+        <activity
+                android:name=".panduan"
+                android:label="Panduan">
         </activity>
     </application>
 

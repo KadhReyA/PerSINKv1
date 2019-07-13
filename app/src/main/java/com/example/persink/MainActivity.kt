@@ -41,6 +41,10 @@ class MainActivity : AppCompatActivity() {
             NotificationUtils().setNotification(mNotificationTime, this@MainActivity)
             startActivity(Intent ( this@MainActivity, com.example.persink.panduan::class.java))
         }
+        val pengaturan = findViewById<ImageButton>(R.id.imageButton6)
+        pengaturan.setOnClickListener {
+            startActivity(Intent (this@MainActivity, pengaturan_notifikasi::class.java))
+        }
 
     }
 }
