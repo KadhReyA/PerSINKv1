@@ -21,8 +21,7 @@ class sim : AppCompatActivity() {
 
         var text =""
         radioGroup.setOnCheckedChangeListener { _ , isChecked ->
-
-            text += if (R.id.radioButton==isChecked)"Laki-Laki" else "Perempuan"
+            text = if (R.id.radioButton==isChecked)"Laki-Laki" else "Perempuan"
         }
         btnSimpanSIM.setOnClickListener {
             val dbHandler = DatabaseHelperSIM(this, null)

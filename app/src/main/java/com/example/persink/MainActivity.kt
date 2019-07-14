@@ -37,8 +37,6 @@ class MainActivity : AppCompatActivity() {
 
         val panduan = findViewById<ImageButton>(R.id.imageButton5)
         panduan.setOnClickListener {
-            val mNotificationTime = Calendar.getInstance().timeInMillis + 5000 //Set after 5 seconds from the current time.
-            NotificationUtils().setNotification(mNotificationTime, this@MainActivity)
             startActivity(Intent ( this@MainActivity, com.example.persink.panduan::class.java))
         }
         val pengaturan = findViewById<ImageButton>(R.id.imageButton6)
